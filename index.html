@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia e Design de Fontes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tipografia e Design de Fontes</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Importação de Fontes Personalizadas</h2>
+            <p>Você pode importar fontes personalizadas de serviços como o <a href="https://www.dafont.com/pt/" target="_blank">daFont.com</a>. Veja como:</p>
+            <ol>
+                <li>Escolha a fonte que deseja no daFont e faça o download do arquivo de fonte (.ttf ou .otf).</li>
+                <li>Adicione a fonte ao seu projeto usando a regra <code>@font-face</code> no seu CSS.</li>
+            </ol>
+            <pre><code>
+@font-face {
+    font-family: 'MinhaFontePersonalizada';
+    src: url('caminho/para/minha-fonte.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+            </code></pre>
+            <p>Agora, você pode aplicar a fonte personalizada em qualquer elemento do seu site:</p>
+            <pre><code>
+body {
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+}
+            </code></pre>
+        </section>
+        <section>
+            <h2>Detectando Fontes em Imagens e Sites</h2>
+            <p>Se você encontrar uma fonte interessante em uma imagem ou site, existem algumas ferramentas que podem ajudar a identificá-la:</p>
+            <h3>Identificação de Fontes em Imagens</h3>
+            <p>Serviços como <a href="https://www.whatfontis.com/" target="_blank">WhatFontIs</a> e <a href="https://www.myfonts.com/WhatTheFont/" target="_blank">WhatTheFont</a> permitem que você faça upload de uma imagem contendo a fonte e recebam sugestões baseadas na análise.</p>
+
+            <h3>Identificação de Fontes em Sites</h3>
+            <p>Extensões como <a href="https://www.fontninja.com/" target="_blank">Font Ninja</a> permitem que você detecte a fonte usada em qualquer site. Basta instalar a extensão no seu navegador e passar o cursor sobre o texto para ver informações como o nome da fonte e o estilo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Tipografia e Design de Fontes</p>
+    </footer>
+</body>
+</html>
